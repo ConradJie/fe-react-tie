@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.out-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.in-con {
+    flex-basis: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.review {
+    justify-content: space-between;
+}
+
+.in-con {
+    flex-basis: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.sold {
+    background-color: chartreuse;
+    border: 1px solid green;
+    color: green;
+}
+
+.purchased {
+    background-color: lightblue;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.toBeSold {
+    background-color: orange;
+    border: 1px solid red;
+    color: red;
+}
+
+.bestSold {
+    background-color: lightgrey;
+    border: 1px dotted black;
+}
+
+.product {
+    flex-basis: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 20px;
+}
+
+.product > p:nth-child(2) {
+    font-size: 24px;
+}
+
+div img,
+.bestSold img {
+    max-width: 200px;
+}
+
+.sold,
+.purchased,
+.toBeSold
+.bestSold {
+    padding: 10px;
+}
+
+li {
+    padding: 0 5px;
+}
+
+li img {
+    max-height: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.prod-con {
+    margin: 32px 0 64px;
+}
+
+.prod-con section p {
+    margin: 5px;
+}
+
+main {
+    margin: 10px;
+    padding: 10px;
+}
