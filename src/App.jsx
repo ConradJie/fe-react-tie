@@ -8,6 +8,7 @@ import euroFormat from "./helpers/euroFormat.js";
 import televisionAvailableSizes from "./helpers/televisionAvailableSizes.js";
 import check from './assets/check.png';
 import minus from './assets/minus.png';
+import OutOfStock from "./components/OutOfStock.jsx";
 
 console.log(televisionsSold(inventory));
 console.log(televisionsPurchased(inventory));
@@ -117,6 +118,9 @@ function App() {
                                         </ul>
                                     </p>
                                 </section>
+                                <p>
+                                    {(tv.sold === tv.originalStock) && <OutOfStock/>}
+                                </p>
                             </div>);
                     })
                 }

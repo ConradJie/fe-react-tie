@@ -331,7 +331,7 @@ export let inventory = [
 const allTvType = inventory.map(tv => tv.type);
 console.log(allTvType);
 
-const soldOut = inventory.filter((tv) => tv.originalStock = tv.sold);
+const soldOut = inventory.filter((tv) => tv.originalStock === tv.sold);
 console.log(soldOut);
 
 const tvNH3216SMART = inventory.filter((tv) => tv.type === "NH3216SMART");
