@@ -39,6 +39,12 @@ function App() {
         inventory.map(i => console.log(`${i.brand} ${i.name} ${i.refreshRate}`));
     }
 
+    function onScreenSizes() {
+        console.log("Grootste schermgroottes eerst");
+        inventory.sort((a, b) => b.availableSizes[b.availableSizes.length - 1] - a.availableSizes[a.availableSizes.length - 1]);
+        console.log(inventory);
+    }
+
     return (
         <main>
             <h1>Tech it easy dashboard</h1>
@@ -71,6 +77,7 @@ function App() {
             <button type="button" onClick={onBestSeller}>Meest verkocht eerst</button>
             <button type="button" onClick={onCheapest}>Goedkoopste eerst</button>
             <button type="button" onClick={onSportTv}>Meest geschikt voor sport eerst</button>
+            <button type="button" onClick={onScreenSizes}>Grootste schermgroottes eerst</button>
             <div>
                 <h3>Beschikbare merken</h3>
                 <ul>
